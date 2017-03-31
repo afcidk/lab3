@@ -1,0 +1,43 @@
+compile : make
+
+----------------------------------------
+The results for question B
+
+O(n^2) by insertion sort	size:1000
+time: 0.009695s
+O(nlogn) by quick sort		size:1000
+time: 0.000352s
+
+O(n^2) by insertion sort	size:10000
+time: 0.480215s
+O(nlogn) by quick sort		size:10000
+time: 0.004602s
+
+O(n^2) by insertion sort	size:100000
+time: 78.635668s
+O(nlogn) by quick sort		size:100000
+time: 0.056288s
+
+O(n^2) by insertion sort	size:1000000
+time: 7575.396857s
+O(nlogn) by quick sort		size:1000000
+time: 0.703860s
+
+----------------------------------------
+We can find the difference of two algorithms that:
+
+1.when n(size) is small, O(n^2) is close to O(nlogn)
+
+2.when n(size) if big, O(n^2) cost lots of time while O(nlogn) still cost less time
+
+----------------------------------------
+briefly explain:
+
+My CPU is 2.0GHz (2*10^9 instructions per second)
+Suggest that a swap cost 16 instructions
+In O(n^2) whose n is 10^5, I need 16*10^10 instructions to sort it
+
+16*10^10/(2*10^9) = 80  --> that means I need roughly 80 seconds to finish sorting with o(n^2)
+
+The empirical result is 78.635668s, is similar to the one I calculated.
+
