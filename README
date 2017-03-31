@@ -37,7 +37,7 @@ My CPU is 2.0GHz (2*10^9 instructions per second)
 Suggest that a swap cost 16 instructions
 In O(n^2) whose n is 10^5, I need 16*10^10 instructions to sort it
 
-16*10^10/(2*10^9) = 80  --> that means I need roughly 80 seconds to finish sorting with o(n^2)
+16*10^10/(2*10^9) = 80  --> that means I need roughly 80 seconds to finish sorting with O(n^2)
 
-The empirical result is 78.635668s, is similar to the one I calculated.
+The empirical result is 78.635668s, is similar to the one I calculated(80s).
 
